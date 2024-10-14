@@ -1,0 +1,347 @@
+*{
+    /* text-decoration: none; */
+    font-family: "Poppins", sans-serif;
+
+}
+/* --------------------------------header--------------------------- */
+
+.header-container{
+    width: 100%;
+    height: 60px;
+    background-color: #414141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title  a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+
+.links-container{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.links-container div a{
+    color: #fff;
+    text-decoration: none;
+}   
+.links-container div a:hover{
+    color: #909090;
+    transition: all .3s ease;
+}  
+
+.header-login a{
+    margin: 0px 30px 0px 0px;
+}
+
+
+/* -----------------------oferts------------------- */
+
+.oferts-container{
+    height: 700px;
+    background-image: url(Imagenes/Fondo.jpg);
+    background-size: 100% 100%;
+    filter: opacity(.8);
+    margin-top: -20px;
+}
+
+.oferts-text{
+    color: #fff;
+    padding: 30px;
+}
+
+.oferts-charts{
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, clamp(200px, 25vw, 25vw));
+    grid-template-rows: repeat(3, clamp(180px, 18vw, 18vw));
+    gap: 15px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.charts{
+    border: solid #000 2px;
+}
+.charts a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.c1{
+    grid-column: 1;
+    grid-row: 1/ span 2;
+}
+.c2{
+    grid-column: 2;
+    grid-row: 1;
+}
+.c3{
+    grid-column: 2;
+    grid-row: 2;
+}
+.c4{
+    grid-column: 3;
+    grid-row: 1/ span 2;
+}
+
+/* -------------------Categorias---------------- */
+
+.Categories{
+    padding: 30px;
+}
+
+.Categories-title h3{
+    font-size: 30px;
+}
+
+.Categories-container{
+    display: flex;
+    justify-content: center;
+}
+
+.Categories-charts{
+    height: 380px;
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.Categories-img{
+    border: solid #000 2px;
+    border-radius: 10px;
+    height: 370px;
+    width: 275px;
+    object-fit: contain;
+}
+
+.Categories-charts a{
+    color: #000;
+    text-decoration: none;
+}
+
+.Categories-charts a img{
+    height: 360px;
+    width: 275px;
+    object-fit: contain;
+}
+
+/* -------------------Formularios--------------- */
+
+.background-form{
+    position: relative;
+}
+
+.background-form-img{
+    position: absolute;
+    background-image: url(Imagenes/Fondo.jpg);
+    height: 700px;
+    width: 100%;
+    filter: opacity(.8);
+    z-index: 1;
+}
+
+.main-form-container{
+    position: absolute;
+    z-index: 5;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+
+}
+
+.form-login{
+    background-color: #fff;
+    height: 675px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.brand-text{
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.form-title{
+    font-size: 30px;
+    align-self: center;
+    margin: 0;
+    padding: 20px 0px 40px 0px;
+}
+
+.form-complement-text{
+    margin-left: 30px;
+}
+
+.register-text{
+    margin-top: -30px;
+}
+
+.form-complement-text .t1{
+    font-size: 20px;
+}
+.form-complement-text .t2{
+    font-size: 12px;
+    color: #626262;
+    margin-top: -15px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.form-container .login-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.form-container .login-input label{
+    margin: 0px 0px 5px 15px;
+}
+
+
+.form-container .login-input input{
+    height: 40px;
+    width: 400px;
+    outline: none;
+    border: solid #000 1px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    
+}
+.form-container .login-input input::placeholder{
+    color: grey;
+    font-size: 12px;
+}
+
+.form-container h3{
+    align-self: flex-end;
+    margin: -5px 30px 0px 0px;
+}
+
+.form-container h3 a{
+    font-size: 12px;
+    color: #626262;
+    text-decoration: none;
+}
+.form-container h3 a:hover{
+    color: #909090;
+    transition: all .3s ease;
+}
+
+.form-container .form-button{
+    color: #fff;
+    background-color: #4C40F8;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 420px;
+    margin-top: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.form-container .form-button:hover{
+    background-color: #675dff;
+}
+
+.divider-container{
+    display: flex;
+    margin-top: 20px;
+    width: 440px;
+    margin-left: 30px;
+}
+
+.divider-line {
+    flex-grow: 1; 
+    height: 1px; 
+    background-color: #000; 
+    margin: 0 10px; 
+  }
+
+.divider-text {
+    font-weight: bold; 
+    margin-top: -8px;
+}
+
+.google-link{
+    align-self: center;
+}
+
+.google-button{
+    color: #000;
+    background-color: #fff;
+    border: solid #000 1px;
+    border-radius: 10px;
+    height: 40px;
+    width: 420px;
+    margin-top: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+    padding: 10px 125px;
+}
+
+.link-login{
+    align-self: center;
+    margin-top: 20px;
+}
+
+.link-login a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #626262;
+    transition: all .3s ease;
+}
+
+.link-login a:hover {
+    color: #202020;
+}
+
+.form-img{
+    background-color: #414141;
+    height: 675px;
+    width: 500px;
+}
+
+.form-img img{
+    margin: 25px;
+    height: 92%;
+    width: 90%;
+    object-fit: cover;
+}
+
+
